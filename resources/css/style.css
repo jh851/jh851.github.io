@@ -1,0 +1,357 @@
+* {
+    padding: 0;
+    margins: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'arial', sans-serif;
+    font-weight: 300;
+    font-size: 22px;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+.row {
+    max-width: 1480px;
+    margin: 0 auto;
+}
+
+/*STAND IN ZK COLOR---
+#34ff04 
+---------------*/
+
+
+
+/*---
+Re-usable / LINKS
+---------------------------*/
+h1,
+h2,
+h3 {
+    font-weight: 300;
+}
+
+h2 {
+    margin: 25px auto;
+    padding-top: 35px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 170%;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #34ff04;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 130%;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+.nav-list li:last-child {
+    padding-right: 120px;
+}
+
+.nav-list a:link,
+.nav-list a:visited {
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.nav-list a:hover,
+.nav-list a:active {
+    border-bottom: 2px solid #fd9644
+}
+
+.hero-btn,
+.hero-btn a:link {
+    text-decoration: none;
+    font-size: 120%;
+    color: #FFF;
+    margin-right: 60px;
+}
+
+.hero-btn a:hover,
+.hero-btn a:active {
+    text-decoration: none;
+    font-size: 120%;
+    color: #FFF;
+    margin-right: 60px;
+}
+
+
+/*---
+Header/hero
+---------------------------*/
+nav {
+    display: flex;
+    flex: auto;
+    grid-column: 4fr 1fr;
+    justify-content: center;
+}
+
+.logoreg img {
+    height: 20%;
+    width: auto;
+    margin-top: 15px;
+    margin-left: 45px;
+}
+
+.spacer {
+    width: 40%;
+    content: " ";
+}
+
+.nav-list {
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    align-content: flex-end;
+    
+    
+    
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 40px;
+    padding-top: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 120%;
+    color: #e2e2e2;
+}
+
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.8)), url(/resources/css/img/bjj-pass.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.our-hero {
+    position: absolute;
+    width: 1280px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, 35%);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    color: #FFF;
+    font-size: 160%;
+    text-transform: uppercase;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+
+
+/*---
+meet-zk
+---------------------------*/
+
+/*-
+.meetzk {
+    background-color: #333333;
+    color: #fff;
+    margin-top: -25px;
+}
+
+.meetzk__container {
+    display: grid;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 25px;
+    justify-content: center;
+}
+
+.meetzk_flavor {
+    justify-content: center;
+}
+
+.meetzk img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+---*/
+
+.section-meetzk {
+    background-color: #333333;
+    color: #fff;
+    padding: 25px;
+}
+
+.meetzk__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 600px;
+    margin: 20px 0;
+    
+}
+
+.meetzk__header {
+    margin: 0 auto;
+    padding-bottom: 10px;
+    text-align: center;
+    
+}
+
+.meetzk__flavor p {
+    font-size: 120%;
+    padding: 2%;
+    line-height: 145%;
+    width: 80%;
+    padding: 3%;
+    margin-left: 5%;
+    
+}
+
+
+
+/*---
+whyjits + classes + RE-CONTAINERS
+---------------------------*/
+
+.whyjits__item {
+    width: 28vw;
+    display:
+}
+
+.whyjits__item h3 {
+    margin: auto;
+}
+
+.whyjits__item:first-child {
+    margin-left: 30px;
+}
+
+.whyjits__item img {
+    width: 100%;
+    display: block;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+
+
+.section-classes {
+    background-color: #343434;
+    color: #fff;
+
+}
+
+.classes__item h3 {
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+}
+
+.classes__item {
+    margin: 20px 30px;
+}
+
+.classes__item blockqoute {
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    line-height: 124%;
+    word-spacing: 1px;
+}
+
+.classes__item:first-child {
+    margin-left: 30px;
+}
+
+.classes__item img {
+    width: 90%;
+    display: block;
+}
+
+.class__contianer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.second {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.second h3 {
+    text-align: center;
+}
+
+.second img {
+    display: block;
+    width: 62%;
+    margin: 0 auto;
+}
+
+.second blockqoute {
+    display: block;
+    width: 62%;
+}
+
+/*---
+        GALLERY
+---------------------------*/
+
+.section-pictures {
+    background-color: #f7f7f7;
+    height: 100vh;
+}
+
+/*---
+        FOOTER
+---------------------------*/
+
+.section-footer {
+    background-color: #333333;
+    color: #fff;
+    height: 10vh;
+}
+
+.footer--firstctr {
+    display: flex;
+}
+
+.firstctr--spacer {
+    content: " ";
+    display: block;
+    width: 800px;
+    margin: 10px auto;
+    flex: 0 0 55%;
+}
+
+
+
+.footer__copyright {
+    text-align: center;
+    margin: 0 auto;
+}
+
